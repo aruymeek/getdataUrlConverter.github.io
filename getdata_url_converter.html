@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css\stylesheet.css"></link>
+</head>
+
+<title>짧은 URL 변환</title>
+
+<body>
+  <div class='container'>
+    <span class='normal'>
+      <table>
+        <tr>
+          <td>
+            <div style="text-align:right;">프로젝트 번호 :&nbsp;</div>
+          </td>
+          <td colspan='2'>
+            <input class=box type='text' id='pjt_num' style="width:60px; text-align:center;" autofocus autocomplete="off" onchange='converter()' />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="text-align:right;">변환 결과 :&nbsp;</div>
+          </td>
+          <td>
+            <input class=box type='text' id='convert_url' style="width:250px; text-align:center;" autocomplete="off">
+          </td>
+          <td>
+            &nbsp;<button id='copy' style="font-size:90%; padding:0px 7px 3px 7px;" onclick="copy_url()">URL 복사</button>
+          </td>
+        <tr>
+    </span>
+  </div>
+<script src="js/converter_function.js"></script>
+</body>
+</html>
